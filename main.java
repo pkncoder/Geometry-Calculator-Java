@@ -15,8 +15,10 @@ public class main
     // Main class with everything (on this file)
     public static void main(String[] args)
     {
-        // Making the scanner liberary
+        // Initailize scanner object
         Scanner input = new Scanner(System.in);
+
+        GeoHelper geoHelper = new GeoHelper();
 
         // Print out the choices and welcome the user
         sprintln("Hello, welcome to the Jv Geo Calculator");
@@ -34,12 +36,18 @@ public class main
             sprintln("You chosee distance calculator.");
 
             // Get the coodinates
-            sprint("Enter the first X coordinate: ");
-            double xOne = input.nextDouble();
+            // x1
+            double xOne = geoHelper.getXOne();
+
+            // y1
             sprint("Enter the first Y coordinate: ");
             double yOne = input.nextDouble();
+
+            // x2
             sprint("Enter the second X coordinate: ");
             double xTwo = input.nextDouble();
+
+            // y2
             sprint("Enter the second Y coordinate: ");
             double yTwo = input.nextDouble();
 

@@ -26,7 +26,9 @@ public class Funcs {
         yTwo = secondY;
     }
 
+    // The equation for distance, prints out self
     public void distance() {
+        // Equation: sqrt((x1-x2)^2+(y1-y2)^2)
         System.out.println("The distance is: " + Math.sqrt(Math.pow((xOne - xTwo), 2) + Math.pow((yOne - yTwo), 2)));
     }
 }
