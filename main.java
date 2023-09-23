@@ -7,6 +7,11 @@ public class main
         System.out.println(text);
     }
 
+    // Make an easier print statement because typeing system.out.print is to much to do so many times
+    public static void sprint(String text) {
+        System.out.print(text);
+    }
+
     // Main class with everything (on this file)
     public static void main(String[] args)
     {
@@ -21,12 +26,28 @@ public class main
         sprintln("For ratio deviding calc, press 4.");
         sprintln("For endpoint finder with ratios, press 5.");
 
-        // Grab the user's
+        // Grab the user's choice for what calc they need
         int userChoice = input.nextInt();
         
         // Sort through the user's choices and then do what they want
         if (userChoice == 1) {
             sprintln("You chosee distance calculator.");
+
+            // Get the coodinates
+            sprint("Enter the first X coordinate: ");
+            double xOne = input.nextDouble();
+            sprint("Enter the first Y coordinate: ");
+            double yOne = input.nextDouble();
+            sprint("Enter the second X coordinate: ");
+            double xTwo = input.nextDouble();
+            sprint("Enter the second Y coordinate: ");
+            double yTwo = input.nextDouble();
+
+            // Make the distance object
+            Funcs distanceObj = new Funcs(xOne, yOne, xTwo, yTwo);
+
+            // Do the calculation
+            distanceObj.distance();
         }
         else if (userChoice == 2) {
             sprintln("You chose midpoint calculator.");
