@@ -40,16 +40,13 @@ public class main
             double xOne = geoHelper.getXOne();
 
             // y1
-            sprint("Enter the first Y coordinate: ");
-            double yOne = input.nextDouble();
+            double yOne = geoHelper.getYOne();
 
             // x2
-            sprint("Enter the second X coordinate: ");
-            double xTwo = input.nextDouble();
+            double xTwo = geoHelper.getXTwo();
 
             // y2
-            sprint("Enter the second Y coordinate: ");
-            double yTwo = input.nextDouble();
+            double yTwo = geoHelper.getYTwo();
 
             // Make the distance object
             Funcs distanceObj = new Funcs(xOne, yOne, xTwo, yTwo);
