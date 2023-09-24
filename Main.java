@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class main
+public class Main
 {
     // Make an easier println statement because typeing system.out.println is to much to do so many times
     public static void sprintln(String text) {
