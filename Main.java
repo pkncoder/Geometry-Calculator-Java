@@ -88,6 +88,32 @@ public class Main
         // LINE RATIO DEVIDING
         else if (userChoice == 4) {
             sprintln("You chose ratio deviding calc.");
+
+            // Get the coodinates
+            // x1
+            double xOne = geoHelper.getXOne();
+
+            // y1
+            double yOne = geoHelper.getYOne();
+
+            // x2
+            double xTwo = geoHelper.getXTwo();
+
+            // y2
+            double yTwo = geoHelper.getYTwo();
+
+            // ratio top
+            int topRatio = geoHelper.getRatioTop();
+            
+            // ratio bottom
+            int bottomRatio = geoHelper.getRatioBottom();
+
+            // Create the object to use
+            Funcs lineRatioDevidingObj = new Funcs(xOne, yOne, xTwo, yTwo, topRatio, bottomRatio);
+
+            // Finnaly, do the equation and print it out
+            lineRatioDevidingObj.ratioLineDeviding();
+            // sprint(xOne + ", " + yOne + ", " + xTwo + ", " + yTwo + ", " + topRatio + ", " + bottomRatio + ".");
         }
 
         // ENDPOINT WITH RATIOS

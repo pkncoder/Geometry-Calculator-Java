@@ -37,4 +37,18 @@ public class Funcs {
         // Equation: X = (x2-x1)/2; Y = (y2-y1)/2
         System.out.println("The midpoint is: (" + (xTwo - xOne) / 2 +", " + (yTwo - yOne) / 2+ ").");
     }
+
+    // The equation for ratio line deviding, prints out self
+    public void ratioLineDeviding() {
+        /* Equation: X = ((topRatio / (topRatio+bottomRatio)) * (x2-x1) + x1));
+        ((topRatio / (topRatio+bottomRatio)) * (y2-y1) + y1)) */
+
+        // Calculate x result
+        double xResult = ( (double) topRatio / (topRatio + bottomRatio) * (xTwo - xOne) + xOne);
+
+        // Calculate y result
+        double yResult = ( (double) topRatio / (topRatio + bottomRatio) * (yTwo - yOne) + yOne);
+        
+        System.out.println("The devided point's coordinates are: (" + xResult + ", " + yResult + ").");
+    }
 }
