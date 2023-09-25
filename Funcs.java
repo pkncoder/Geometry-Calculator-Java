@@ -31,4 +31,10 @@ public class Funcs {
         // Equation: sqrt((x1-x2)^2+(y1-y2)^2)
         System.out.println("The distance is: " + Math.sqrt(Math.pow((xOne - xTwo), 2) + Math.pow((yOne - yTwo), 2)));
     }
+
+    // The equation for midpoint, prints out self
+    public void midpoint() {
+        // Equation: X = (x2-x1)/2; Y = (y2-y1)/2
+        System.out.println("The midpoint is: (" + (xTwo - xOne) / 2 +", " + (yTwo - yOne) / 2+ ").");
+    }
 }

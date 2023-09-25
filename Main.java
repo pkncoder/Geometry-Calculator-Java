@@ -32,6 +32,7 @@ public class Main
         int userChoice = input.nextInt();
         
         // Sort through the user's choices and then do what they want
+        // DISTANCE
         if (userChoice == 1) {
             sprintln("You chosee distance calculator.");
 
@@ -54,18 +55,47 @@ public class Main
             // Do the calculation
             distanceObj.distance();
         }
+
+        // MIDPOINT
         else if (userChoice == 2) {
             sprintln("You chose midpoint calculator.");
+
+            // Get the coodinates
+            // x1
+            double xOne = geoHelper.getXOne();
+
+            // y1
+            double yOne = geoHelper.getYOne();
+
+            // x2
+            double xTwo = geoHelper.getXTwo();
+
+            // y2
+            double yTwo = geoHelper.getYTwo();
+
+            // Create the object that we will use
+            Funcs midpointObj = new Funcs(xOne, yOne, xTwo, yTwo);
+
+            // Do the function, this prints out everything also.
+            midpointObj.midpoint();
         }
+
+        // ENDPOINT WITH MIDPOINT
         else if (userChoice == 3) {
             sprintln("You chose endpoint finder with midpoint.");
         }
+
+        // LINE RATIO DEVIDING
         else if (userChoice == 4) {
             sprintln("You chose ratio deviding calc.");
         }
+
+        // ENDPOINT WITH RATIOS
         else if (userChoice == 5) {
             sprintln("You chose endpoint finder using ratios.");
         }
+
+        // FINAL THING SO NO ERROR
         else {
             sprintln("Run the program again, out of area.");
         }
