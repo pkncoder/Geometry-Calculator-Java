@@ -119,6 +119,31 @@ public class Main
         // ENDPOINT WITH RATIOS
         else if (userChoice == 5) {
             sprintln("You chose endpoint finder using ratios.");
+
+            // Get the coodinates
+            // x1
+            double xOne = geoHelper.getXOne();
+
+            // y1
+            double yOne = geoHelper.getYOne();
+
+            // x2
+            double xTwo = geoHelper.getXTwo();
+
+            // y2
+            double yTwo = geoHelper.getYTwo();
+
+            // ratio top
+            int topRatio = geoHelper.getRatioTop();
+            
+            // ratio bottom
+            int bottomRatio = geoHelper.getRatioBottom();
+
+            // Create the object for this
+            Funcs endpointRatioObj = new Funcs(xOne, yOne, xTwo, yTwo, topRatio, bottomRatio);
+
+            // Do the command/equation/function
+            endpointRatioObj.findEndpointRatio();
         }
 
         // FINAL THING SO NO ERROR

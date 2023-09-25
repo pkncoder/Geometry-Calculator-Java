@@ -51,4 +51,17 @@ public class Funcs {
         
         System.out.println("The devided point's coordinates are: (" + xResult + ", " + yResult + ").");
     }
+
+    public void findEndpointRatio() {
+        /* Equation:
+        X: (((x2 - x1) / first_ratio) / second_ratio) + x1
+        Y: (((y2 - y1) / first_ratio) / second_ratio) + y1 
+        */ 
+
+        double xResult = (((xTwo - xOne) / topRatio) * bottomRatio) + xTwo;
+        
+        double yResult = (((yTwo - yOne) / topRatio) * bottomRatio) + yTwo;
+
+        System.out.println("The endpoint is: (" + xResult + ", " + yResult + ").");
+    }
 }
