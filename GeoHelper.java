@@ -43,4 +43,22 @@ public class GeoHelper {
         // Return x2 value
         return yTwo;
     }
+
+    // Used for getting ratio part one
+    public int getRatioTop() {
+        System.out.print("Enter the top/first part of the ratio. Should be a part-part ratio: ");
+        int ratioTop = input.nextInt();
+
+        // Return ratio top
+        return ratioTop;
+    }
+
+    // Used for getting ratio part two
+    public int getRatioBottom() {
+        System.out.print("Enter the bottom/second part of the ratio. Should be a part-part ratio: ");
+        int ratioBottom = input.nextInt();
+
+        // Return ratio top
+        return ratioBottom;
+    }
 }
