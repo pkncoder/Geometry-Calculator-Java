@@ -83,6 +83,25 @@ public class Main
         // ENDPOINT WITH MIDPOINT
         else if (userChoice == 3) {
             sprintln("You chose endpoint finder with midpoint.");
+
+            // Get the coodinates
+            // x1
+            double xOne = geoHelper.getXOne();
+
+            // y1
+            double yOne = geoHelper.getYOne();
+
+            // x2
+            double xTwo = geoHelper.getXTwo();
+
+            // y2
+            double yTwo = geoHelper.getYTwo();
+
+            // Create the object that we will use
+            Funcs endpointMidpointFinder = new Funcs(xOne, yOne, xTwo, yTwo);
+
+            // Create
+            endpointMidpointFinder.findEndpointMidpoint();
         }
 
         // LINE RATIO DEVIDING

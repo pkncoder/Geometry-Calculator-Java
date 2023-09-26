@@ -38,6 +38,18 @@ public class Funcs {
         System.out.println("The midpoint is: (" + (xTwo - xOne) / 2 +", " + (yTwo - yOne) / 2+ ").");
     }
 
+    // Used to find the endpoint while using the midpoint
+    public void findEndpointMidpoint() {
+        /*
+         * Equation:
+         * X: ((x2 - x1) * 2) + x1
+         * Y: ((y2 - y1) * 2) + y1
+         */
+
+        // Do the equation and print out the answer
+        System.out.println("The endpoint is: (" + (((xTwo - xOne) * 2) + xOne) + ", " + (((yTwo - yOne) * 2) + yOne) + ").");
+    }
+
     // The equation for ratio line deviding, prints out self
     public void ratioLineDeviding() {
         /* Equation: X = ((topRatio / (topRatio+bottomRatio)) * (x2-x1) + x1));
